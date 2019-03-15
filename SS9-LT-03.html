@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function check(str) {
+        let regexp = /[aeoiu]/g;
+        return str.match(regexp);
+    }
+
+    function check2(str) {
+        let regexp1 = /[^aeoiu0-9 ]/g;
+        return str.match(regexp1);
+    }
+
+    let str = prompt("Input String here");
+    let result = check(str);
+    let result2 = check2(str);
+    document.write("Trong câu :" + str + "<br>");
+    document.write("Có " + result.length + " nguyên âm" + "<br>");
+    document.write("Có " + result2.length + " phụ âm")
+</script>
+</body>
+</html>

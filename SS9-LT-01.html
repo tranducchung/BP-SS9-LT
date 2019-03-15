@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function checkDay(str) {
+        let regexp =/^(((([0][1-9]|[1][0-9]|[2][0-8])\/[0][2])|(([0][1-9]|[12][0-9]|[3][0-1])\/([0][13578]|[1][02]))|(([0][1-9]|[12][0-9]|[3][0])\/([0][469]|[1][1]))))\/[0-9]{4}$/;
+        return regexp.test(str)
+    }
+    let str = prompt("Input here");
+    let result = checkDay(str);
+    if (result) {
+        alert("Invalid")
+    } else {
+        alert("unInvalid")
+    }
+</script>
+</body>
+</html>

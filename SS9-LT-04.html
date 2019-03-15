@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function checkPass(str) {
+        let regexp = /^[C][0-9]{4}\I[1-9]$/;
+        return regexp.test(str)
+    }
+    let str = prompt("Input pass here");
+    let result = checkPass(str);
+    if (result) {
+        alert("Pass Invalid")
+    } else {
+        alert("Pass unInvalid")
+    }
+</script>
+</body>
+</html>
